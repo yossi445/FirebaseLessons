@@ -33,8 +33,6 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         tvDisplay.setText(str);
 
 
-
-
     }
 
     @Override
