@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
 
-    TextView tvDisplay, tvTitle;
+    TextView tvDisplay;
     FirebaseAuth firebaseAuth;
     Button btnSignOut;
     String str;
@@ -25,7 +25,6 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         firebaseAuth = FirebaseAuth.getInstance();
 
         tvDisplay = findViewById(R.id.tvDisplay);
-        tvTitle = findViewById(R.id.tvTitle);
         btnSignOut = findViewById(R.id.btnSignOut);
         btnSignOut.setOnClickListener(this);
 
@@ -40,7 +39,6 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
         firebaseAuth.signOut();
         tvDisplay.setText("");
-        tvTitle.setText("שלום אורח");
 
     }
 }
